@@ -23,10 +23,10 @@ def csv_reding(file_name):
                 kruskal_counter += float(row[3])
             line_count += 1
 
-    print('dijkstra_counter: ', dijkstra_counter)
-    print('bellman_ford_counter', bellman_ford_counter)
-    print('prim_counter', prim_counter)
-    print('kruskal_counter', kruskal_counter)
+    print('dijkstra_counter: ', dijkstra_counter/100)
+    print('bellman_ford_counter', bellman_ford_counter/100)
+    print('prim_counter', prim_counter/100)
+    print('kruskal_counter', kruskal_counter/100)
 
 directory_path = 'C:\\Users\\Michal\\Desktop\\Phyton\\Jakies projekty\\pythonProject\\'
 
@@ -54,7 +54,7 @@ matrix_file_99 = 'mat99.txt'
 
 matrix_array = [matrix_file_25, matrix_file_55, matrix_file_75, matrix_file_99]
 
-
+print('\n\n\nLISTY\n\n\n')
 for directories in directory_array:
     # listy
     for list_file in list_array:
@@ -62,6 +62,9 @@ for directories in directory_array:
         final_path = directory_path + directories + list_path + list_file
         print(final_path)
         csv_reding(final_path)
+
+print('\n\n\nMACIERZ\n\n\n')
+for directories in directory_array:
     # macierze
     for matrix_file in matrix_array:
         final_path = ''
